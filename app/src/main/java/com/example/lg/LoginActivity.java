@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
                     Boolean checkdetails = databaseHelper.checkUsernamePassword(username, password);
 
                     if (checkdetails) {
-                        Toast.makeText(LoginActivity.this, "All fields Required", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                         startActivity(intent);
                     } else {
